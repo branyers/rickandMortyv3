@@ -2,7 +2,7 @@ export const Card = ({Characters}) => {
     const {name, status, species, location, origin,image} = Characters;
     const statusClassName = status === 'Alive' ? 'bg-green-500' : status === 'unknown' ? 'bg-gray-500' : 'bg-red-500';
     return (
-     <section className="bg-BackgroudCardColor max-h-64 min-w-[600px]  w-1/3 flex mx-5 rounded-md">
+     <section className="bg-BackgroudCardColor h-52 max-h-64 min-w-[600px]  w-1/3 flex mx-5 rounded-md">
         <img className="rounded-l-md object-cover min-h-40 w-40" src={image} alt="" />
 
         <div className="ml-3 mt-1 flex-col">
